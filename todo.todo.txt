@@ -1,0 +1,42 @@
+- click on arsenal set the hand
+- battle scene
+- maybe a transition scene
+- add coin
+- show coins
+- join game
+- display hand
+- set hand
+- upload them to the nft coso
+
+
++- pseudo random with javascript
+
++- 9 ship
++- 18 colors
++- 6 covers
++- 10 foreground
++- 10 background
++- 6 back
++- 13 wings
++- import svg wings
+
++- es posible que las naves requieran una posicion para el viewport  
++- load the svg ship from code
++- load the svg wings from code
++- extract card component
+
+
++- draw a spaceship
++- use a pseudorandom number that allows me to generate the properties for each ship without bringing that data from the blockchain
+
++- define patterns for back
++- define patters for second
++- define patterns for back
+
++- define a size for the game: 960 X 640
+
++- generate spaceships using svg encoded data - ships 
++- hacer que el encoding use 2 caracteres normales // revisar si la compresion mejora de esta forma
+
++- wrap this spaceships in cards
++- el color que vaya en otro numero separado
