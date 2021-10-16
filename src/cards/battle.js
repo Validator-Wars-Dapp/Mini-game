@@ -98,10 +98,15 @@ const loadBattle = async (battleLog) => {
   flipCard(cardB);
   await delay(400);
 
+  let gamevalue=0;
   let scores = [0, 0];
   let winner = false;
   for (let index = 0; index < battleLog.rounds.length && !winner; index++) {
     let message = 'point!!!';
+    if (message == 'point!!!'){
+      gamevalue++;
+      document.getElementById("gamevalue").innerHTML = gamevalue;
+    }
     const { handA, handB } = battleLog.rounds[index];
     const roundWinner = await solveBattleScript(configA.backCover, configB.backCover, handA.map(c=>battleLog.arsenalA[c]), handB.map(c=>battleLog.arsenalB[c]));
     if (roundWinner>0) {
