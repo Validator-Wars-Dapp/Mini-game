@@ -104,6 +104,7 @@
             position: relative;
             top: 0;
             transition: 0.35s ease-in-out;
+            color:white;
         }
         #dl p {
             padding: 1vh;
@@ -112,6 +113,7 @@
             height: 14vh;
             display: flex;
             align-items: center;
+            
         }
         #dlb a {
             display: block;
@@ -770,25 +772,22 @@
              
              <div class="card" style="transform: rotateY(360deg); width: 120%;height:70vh;
     background:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);
-    box-shadow: 1px 1px 5px lightgrey;
     padding: 5px;
     border-radius: 4px;
     color:white;
  ">
                       <strong>My Items</strong>
-                       <col>
+                      <strong  style="color:blue">BIOH</strong>
                         <img src="https://github.com/Validator-Wars-Dapp/Mini-game/blob/main/src/asset/3-removebg-preview.png?raw=true" alt="bioh" width="30%; ">
-                        <strong  style="color:blue">BIOH</strong>
-                     
+                        <pre style="height:100vh">
                         GENE    {{}}
                         EXPE    {{}}
                         WIN     {{}}
                         LOSS    {{}}
                         FUEL    {{}}
                      
-                    </col>                         
-    <button type="button" style="width:35%;border-radius: 16px;color:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);"> 
-    Select</button>
+                           </pre>             
+    <input type="button" onclick="if(this.value=='Refuel') { this.value='Select'; } else { this.value='Refuel'; }" style="width:35%;border-radius: 16px;" data-toggle="tooltip" data-placement="top" title="Refuel then select"> </input>
    
                         <hr>
                           <img src="https://github.com/Validator-Wars-Dapp/Mini-game/blob/main/src/asset/9-removebg-preview.png?raw=true" alt="chymera" width="30%;">
@@ -817,9 +816,11 @@
                          </div>
                       
                        <div class='center space'>
-                        <button style="width:35%;border-radius: 16px;color:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);"><a class='btn' id='joinGamebtn' href='#' style="width:35%;border-radius: 16px;color:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);">TRAIN</a></button>
+                        <button style="width:35%;border-radius: 16px;color:purple">
+                        <a class='btn' id='joinGamebtn'>TRAIN</a></button>
                         <span id='joinGameLabel' class='hide'>joined</span>
-                        <button style="width:35%;border-radius: 16px;color:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);"><a class='btn' href='#' onclick='addCredits()'>ARENA</a></button>
+                        <button style="width:35%;border-radius: 16px;color:red">
+                        <a class='btn'>ARENA</a></button>
                 </div>
                 <img src="https://github.com/Validator-Wars-Dapp/Mini-game/blob/main/src/asset/1-removebg-preview.png?raw=true" alt="avatar" width="30%; align:left"/>
                 <div class='center'>
@@ -904,12 +905,11 @@
            <div class="card" style="width: 15rem;transform: rotateY(360deg);height: 60vh;
     width: 100%;height:70vh;
     background:linear-gradient(241.35deg, rgba(52, 39, 155, 0.59) 1.03%, rgba(76, 52, 191, 0.44) 15.57%, rgba(72, 37, 85, 0.786458) 50.48%, rgba(171, 60, 25, 0.17) 92.65%);
-    box-shadow: 1px 1px 5px lightgrey;
-    padding: 20px;
+    padding: 5px;
     border-radius: 4px;
     color:white;
     justify-content: center;">
-    <h5><strong>Match and Play</strong></h5>
+    <strong>Match and Play</strong>
     <p>1 BET - 1mGEN </p>
     <hr>
     <p>HF445...H5647</p>
