@@ -156,7 +156,7 @@ const updatetime = () => {
 
   const mins = ~~(time / (1000 * 60));
   const secs = (~~((time - mins*60*1000) / 1000)).toString().padStart(2, '0');
-  dgs.innerHTML = `game will start in ${mins}:${secs}`;
+  dgs.innerHTML = `The war will start in ${mins}:${secs} seconds`;
   const timer = byId('timer')
   if (timer) timer.innerHTML = `${mins}:${secs}`;
 }
@@ -277,18 +277,18 @@ const renderGamePage = () => {
     ship.appendChild(card.cardElement);
   }
   gameStats.innerHTML = `
-<tr><td>spacewar: #${ game.id }</td><td>${ net }</td></tr>
-<tr><td>round: #${ game.round }</td><td>next battle: <span id='timer'></td></tr>
-<tr><td>remaining ships: ${ game.totalPlayers }</td><td>${ game.totalPlayers==2?' - last round -':'' }</td></tr>
+<tr><td>Cyber vs Bio: #${ game.id }</td><td>${ net }</td></tr>
+<tr><td>Round: #${ game.round }</td><td>next battle: <span id='timer'></td></tr>
+<tr><td>Remaining Neutrino awards: ${ game.totalPlayers }</td><td>${ game.totalPlayers==2?' - last round -':'' }</td></tr>
   `;
 
   shipStats.innerHTML = `
 <span class='shipName'>${BASE_NAMES[player.config.shapeId]} ${WINGS_NAMES[player.config.wingsId]}</span>
 <hr>
-<span>spaceship: <a href='https://bafybeifh3mmbyccjo64qjr6thhphyspnxirtcv6rxb3bsip5noaicv5v4i.ipfs.dweb.link?id=${ player.shipId }' target='_blank'>#${ player.shipId }</a></span>
-<span>galaxy: ${ GALAXY_NAMES[player.config.bgEffect] }</span>
-<span>faction: ${ FACTION_NAMES[player.config.backCover] }</span>
-<span>victories: ${ player.victories }</span>
+<span>SPL tokens: <a href='https://bafybeifh3mmbyccjo64qjr6thhphyspnxirtcv6rxb3bsip5noaicv5v4i.ipfs.dweb.link?id=${ player.shipId }' target='_blank'>#${ player.shipId }</a></span>
+<span>Breed-type: ${ GALAXY_NAMES[player.config.bgEffect] }</span>
+<span>Faction member: ${ FACTION_NAMES[player.config.backCover] }</span>
+<span>Mutagens: ${ player.victories }</span>
 <hr>
 <a id='blMe' href='#'>${blMeStates[blIndex]}</a>`;
   group.innerHTML='';
@@ -319,11 +319,7 @@ initNear();
 if (DEBUG) {
   initialization();
   timeFactor = 0.5;
-  //setGameState(JOINED);
-  //changePage('viewBattle');
-  //startGame();
-  //loadGameScreen();
-  //changePage('debugView')
+
 }
 
 
